@@ -28,6 +28,7 @@ github_username:  jekyll
 markdown: kramdown
 highlighter: rouge
 theme: minima
+future: true
 gems:
   - jekyll-feed
 exclude:
