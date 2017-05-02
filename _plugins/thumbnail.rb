@@ -1,3 +1,5 @@
+## generate a line for small and normal size image
+##
 module Jekyll
   class RenderThumbTag < Liquid::Tag
 

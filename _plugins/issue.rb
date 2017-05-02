@@ -1,3 +1,5 @@
+## {% issue #issue %} will generate a code for bugzilla netbeans issue
+
 module Jekyll
   class RenderIssueTag < Liquid::Tag
 
