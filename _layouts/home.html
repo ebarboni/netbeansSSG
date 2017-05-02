@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://netbeans.org/netbeans3.css">
+    </head>
+    <body class="blue-bg">
+        <div id="wrapper-fixed">
+            <header>
+                <div class="container">
+                    <div id="navtabs">
+                        <a href="/"><img src="https://netbeans.orghttps://netbeans.org//images_www/v7/design/logo_netbeans_red.png" id="nblogo" width="130" height="32"/></a>
+                        <ul><li class="hover first"><a href="/features/index.html" title="NetBeans&nbsp;IDE"  >NetBeans IDE</a></li>
+                            <li class="hover "><a href="/features/platform/index.html" title="NetBeans&nbsp;Platform"  >NetBeans Platform</a></li>
+                            <li class="hover "><a href="/enterprise/index.html" title="Enterprise"  >Enterprise</a></li>
+                            <li class="hover "><a href="http://plugins.netbeans.org/PluginPortal/" title="Plugins"  >Plugins</a></li>
+                            <li class="hover "><a href="/kb/index.html" title="Docs&nbsp;&amp;&nbsp;Support"  >Docs &amp; Support</a></li>
+                            <li class="hover "><a href="/community/index.html" title="Community"  >Community</a></li>
+                        </ul> <div id="search-div">
+                            <form action="/search_result.html" id="cse-search-box">
+                                <input type="hidden" name="cx" value="006102455337629464213:mt38ytkbuak" >
+                                <input type="hidden" name="cof" value="FORID:11" >
+                                <input type="text" id="search-input" value="Search" name="q"/>
+                                <input type="image" src="https://netbeans.orghttps://netbeans.org//images_www/v7/design/icon_search.png" id="magnifier" alt="search"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <h1><a href="/">Bakery<strong>Store</strong></a></h1>
+
+
+            </header></div>
+        <div class="content">
+            <div id="news-pane">
+                <div class="float-right allnews">
+                    <img src="https://netbeans.org//images_www/v6/arrow-button.gif" width="15" height="12"><a href="./community/news/" style="font-weight:bold;">See All News</a></div>
+                <h3>Featured News:</h3>
+                <ul id="news" class="newsticker" >
+                    {% for post in site.categories.news %}
+                    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li>
+                        <a href="https://www.meetup.com/BangaloreOpenJUG/events/238630862/" title="29 April 2017: NetBeans Day India">29 April 2017: NetBeans Day India</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.idrsolutions.com/2017/02/netbeans-day-uk-announced-for-tuesday-25th-april-2017/" title="25 April 2017: NetBeans Day UK">25 April 2017: NetBeans Day UK</a>
+                    </li>
+                    <li>
+                        <a href="https://www.eventbrite.com/e/netbeans-day-athens-2017-tickets-30192697170" title="21 April 2017: NetBeans Day Greece">21 April 2017: NetBeans Day Greece</a>
+                    </li>
+                    <li>
+                        <a href="https://yurplan.com/event/Apache-Net-Beans-Day-France/13230" title="7 February 2017: NetBeans Day France">7 February 2017: NetBeans Day France</a>
+                    </li>
+                    <li>
+                        <a href="https://www.dawsoncollege.qc.ca/netbeansday/" title="12 January 2017: NetBeans Day Canada">12 January 2017: NetBeans Day Canada</a>
+                    </li>
+                    <li>
+                        <a href="http://www.oracle.com/technetwork/articles/java/enterprise-cloud-2227135.html" title="Build with NetBeans IDE, Deploy to Oracle Java Cloud Service">Build with NetBeans IDE, Deploy to Oracle Java Cloud Service</a>
+                    </li>    
+                </ul>
+            </div>
+
+
+            <!-- .top file end -->
+
+        </div> <!-- end fixed-top-contentbox -->
+        <div id="middle">
+            <table class="colapse full-width f-page-table-2col"> <!-- main content table -->
+                <tr>
+                    <td class="valign-top"><!-- main content cell, testwww page is here -->
+
+                        <script src="https://netbeans.orghttps://netbeans.org//images_www/js/carouFred/jquery.carouFredSel-5.6.4-packed.js"></script>
+                        <script type="text/javascript">
+                            $(function () {
+                                $("#carousel").carouFredSel({
+                                    scroll: {items: 3, duration: 1000, pauseOnHover: true},
+                                    prev: {
+                                        button: "#btn_prev",
+                                        key: "left"
+                                    },
+                                    next: {
+                                        button: "#btn_next",
+                                        key: "right"
+                                    }
+                                });
+
+                            });
+                        </script>
+                        <style>
+                            #carousel {
+                                margin:0px;padding:0px;
+                            }
+                            #carousel li {
+                                width:290px;
+                                float:left;
+                                text-align: center;
+                                list-style: none;
+                            }
+                            #btn_prev {
+                                position: absolute;
+                                top:115px;
+                                left:0px;
+                                width:23px;
+                                height:48px;
+                                background: url(https://netbeans.org//images_www/v7/design/scroller_disabled_left.png) no-repeat 0 0;
+                            }
+                            #btn_next {
+                                position: absolute;
+                                top:115px;
+                                right:0px;
+                                width:23px;
+                                height:48px;
+                                background: url(https://netbeans.org//images_www/v7/design/scroller_disabled_right.png) no-repeat 0 0;
+                            }
+                            #btn_prev:hover {
+                                background: url(https://netbeans.org//images_www/v7/design/scroller_enabled_left.png) no-repeat 0 0;
+                            }
+                            #btn_next:hover {
+                                background: url(https://netbeans.org//images_www/v7/design/scroller_enabled_right.png) no-repeat 0 0;
+                            }
+
+                        </style>
+                        <div id="fp-main">
+                            <div style="padding:5px 0px 5px 15px;position:relative;">
+                                <div style="width:890px;height: 252px;overflow: hidden;position:relative;">
+                                    <ul class="slides" id="carousel">
+                                        <li>
+                                            <h3 class="align-center">Best Support for<br/>Latest Java Technologies</h3>
+                                            <a href="/features/index.html#o1" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_j_technologies.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o1" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">Fast &amp; Smart<br/> Code Editing</h3>
+                                            <a href="/features/index.html#o2" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_c_editing.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o2" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">New:<br/> Darcula Look & Feel Theme</h3>
+                                            <a href=" http://plugins.netbeans.org/plugin/62424/darcula-laf-for-netbeans" class="lmore">
+                                                <img src="https://netbeans.org//images_www/v7/design/image_carusel_darcula.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href=" http://plugins.netbeans.org/plugin/62424/darcula-laf-for-netbeans" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h3 class="align-center">Easy &amp; Efficient<br/> Project Management</h3>
+                                            <a href="/features/index.html#o3" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_p_management.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o3" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">Rapid User Interface<br/> Development</h3>
+                                            <a href="/features/index.html#o4" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_ui_development.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o4" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center"> Write Bug Free<br/>Code</h3>
+                                            <a href="/features/index.html#o5" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_bug_free.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o5" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">Powerful Tools for<br/>JavaScript, HTML5, and CSS3</h3>
+                                            <a href="/features/html5/index.html" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_create_html5.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/html5/index.html" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">Cross Platform<br/>Support</h3>
+                                            <a href="/features/index.html#o6" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_cross_platform.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o6" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3 class="align-center">Support for<br> Multiple Languages</h3>
+                                            <a href="/features/index.html#o6" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_languages_support.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o6" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h3 class="align-center">Rich Set of<br> Community Provided Plugins</h3>
+                                            <a href="/features/index.html#o6" class="lmore"><img src="https://netbeans.org//images_www/v7/design/image_carusel_plugins.png" width="245" height="160"/></a>
+                                            <p>
+                                                <a href="/features/index.html#o6" class="lmore arr-link">More</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                                <a class="prev" id="btn_prev" href="#"><span></span></a>
+                                <a class="next" id="btn_next" href="#"><span></span></a>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr><!-- end main content -->
+            </table><!-- end main content table -->
+        </div><!-- end fixed-contentbox-ie -->
+        <!-- end fixed-contentarea --><div id="ftr">
+            <ul class="float-right" id="social-media">
+                <li><a href="http://www.facebook.com/NetBeans"><img src="https://netbeans.org//images_www/v7/design/icin_facebook.png" width="30" height="30" alt="facebook"></a></li>
+                <li><a href="http://www.youtube.com/user/netbeansvideos"><img src="https://netbeans.org//images_www/v7/design/icin_youtube.png" width="30" height="30" alt="youtube"></a></li>
+                <li><a href="https://plus.google.com/105597468329838196909/"><img src="https://netbeans.org//images_www/v7/design/icin_google.png" width="30" height="30" alt="google+"></a></li>
+                <li><a href="https://twitter.com/netbeans"><img src="https://netbeans.org//images_www/v7/design/icin_twitter.png" width="30" height="30" alt="twitter"></a></li>
+            </ul>
+            <ul>
+                <li><a href="/sitemaps/www_map.html">SiteMap</a></li>
+                <li><a href="/about/index.html">About Us</a></li>
+                <li><a href="/about/contact.html">Contact</a></li>
+                <li><a href="/about/legal/index.html">Legal &amp; Licences</a></li>
+            </ul>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
