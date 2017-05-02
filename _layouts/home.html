@@ -7,30 +7,9 @@
     </head>
     <body class="blue-bg">
         <div id="wrapper-fixed">
-            <header>
-                <div class="container">
-                    <div id="navtabs">
-                        <a href="/"><img src="https://netbeans.orghttps://netbeans.org//images_www/v7/design/logo_netbeans_red.png" id="nblogo" width="130" height="32"/></a>
-                        <ul><li class="hover first"><a href="/features/index.html" title="NetBeans&nbsp;IDE"  >NetBeans IDE</a></li>
-                            <li class="hover "><a href="/features/platform/index.html" title="NetBeans&nbsp;Platform"  >NetBeans Platform</a></li>
-                            <li class="hover "><a href="/enterprise/index.html" title="Enterprise"  >Enterprise</a></li>
-                            <li class="hover "><a href="http://plugins.netbeans.org/PluginPortal/" title="Plugins"  >Plugins</a></li>
-                            <li class="hover "><a href="/kb/index.html" title="Docs&nbsp;&amp;&nbsp;Support"  >Docs &amp; Support</a></li>
-                            <li class="hover "><a href="/community/index.html" title="Community"  >Community</a></li>
-                        </ul> <div id="search-div">
-                            <form action="/search_result.html" id="cse-search-box">
-                                <input type="hidden" name="cx" value="006102455337629464213:mt38ytkbuak" >
-                                <input type="hidden" name="cof" value="FORID:11" >
-                                <input type="text" id="search-input" value="Search" name="q"/>
-                                <input type="image" src="https://netbeans.orghttps://netbeans.org//images_www/v7/design/icon_search.png" id="magnifier" alt="search"/>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <h1><a href="/">Bakery<strong>Store</strong></a></h1>
+            {% include menu.html %}
+        </div>
 
-
-            </header></div>
         <div class="content">
             <div id="news-pane">
                 <div class="float-right allnews">
@@ -40,7 +19,7 @@
                     {% for post in site.categories.news %}
                     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
-                 </ul>
+                </ul>
             </div>
 
 
@@ -209,10 +188,7 @@
 
         </div>
 
-        <footer>
-            <div class="container">
-                <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
-            </div>
-        </footer>
+        {% include footer.html %}
+
     </body>
 </html>
